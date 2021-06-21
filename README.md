@@ -1,6 +1,6 @@
 # Bookmark Manager
 
-## User story with process model
+## User story with model
 ```
 As a user who likes to remain organised,
 So that I can quickly visit website I regularly used websites,
