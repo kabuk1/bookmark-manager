@@ -1,0 +1,34 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/leslie/makersacademy/bookmark-manager/app.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          1,
+          0,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/leslie/makersacademy/bookmark-manager/spec/features/hello_world_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      }
+    },
+    "timestamp": 1624285367
+  }
+}
