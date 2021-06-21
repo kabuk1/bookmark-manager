@@ -6,8 +6,9 @@ class BookmarkManager < Sinatra::Base
     register Sinatra::Reloader 
   end
 
-  get '/hello-world' do
-    'Hello World!'
+  get '/' do
+    'Bookmark Manager'
   end
-    
+
+  run! if app_file == $0
 end
