@@ -5,6 +5,7 @@
         "lines": [
           1,
           1,
+          1,
           null,
           1,
           1,
@@ -17,9 +18,40 @@
           null,
           1,
           1,
+          1,
           null,
           null,
           1,
+          null
+        ]
+      },
+      "/Users/leslie/makersacademy/bookmark-manager/lib/bookmark.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          2,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/leslie/makersacademy/bookmark-manager/spec/bookmark_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
           null
         ]
       },
@@ -37,10 +69,11 @@
           1,
           1,
           null,
+          null,
           null
         ]
       }
     },
-    "timestamp": 1624288182
+    "timestamp": 1624293234
   }
 }

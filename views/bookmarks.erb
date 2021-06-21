@@ -1,3 +1,5 @@
-<a href="https://dev.to/">https://dev.to/</a>
-<a href="https://hackernoon.com/">https://hackernoon.com/</a>
-<a href="https://hashnode.com/">https://hashnode.com/</a>
+<ul>
+  <% @bookmarks.each do |bookmark| %>
+  <li><%= bookmark %></li>
+  <% end %>
+</ul>
