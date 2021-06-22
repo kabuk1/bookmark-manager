@@ -1,6 +1,15 @@
 require 'capybara/rspec'
 require 'simplecov'
 require 'simplecov-console'
+require 'setup_test_db'
+
+ENV['ENVIRONMENT'] = 'test'
+
+RSpec.configure do |config|
+  config.before(:each) do
+    setup_test_db
+  end
+end
 
 SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new([
   SimpleCov::Formatter::Console,

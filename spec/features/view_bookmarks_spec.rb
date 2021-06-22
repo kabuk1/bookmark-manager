@@ -5,10 +5,18 @@ feature 'View bookmarks' do
   end
 
   scenario 'visit bookmarks page to see list of bookmarks' do
+    connection = PG.connect(dbname: 'bookmark_manager_test')
+
+    connection.exec("INSERT INTO bookmarks VALUES(1, 'https://dev.to');")
+    connection.exec("INSERT INTO bookmarks VALUES(2, 'https://hashnode.com');")
+    connection.exec("INSERT INTO bookmarks VALUES(3, 'https://hackernoon.com');")
+    connection.exec("INSERT INTO bookmarks VALUES(4, 'https://www.freecodecamp.org');")
+
     visit('/bookmarks')
-    expect(page).to have_content('https://dev.to/')
-    expect(page).to have_content('https://hashnode.com/')
-    expect(page).to have_content('https://hackernoon.com/')
+    expect(page).to have_content('https://dev.to')
+    expect(page).to have_content('https://hashnode.com')
+    expect(page).to have_content('https://hackernoon.com')
+    expect(page).to have_content('https://www.freecodecamp.org')
   end
 
 end
