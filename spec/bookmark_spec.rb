@@ -18,4 +18,13 @@ describe Bookmark do
       expect(bookmarks).to include('https://www.freecodecamp.org')
     end
   end
+
+  describe '.create' do
+    it 'creates a new bookmark' do
+      Bookmark.create(url: 'https://medium.com')
+  
+      expect(Bookmark.all).to include 'https://medium.com'
+    end
+  end
+
 end
