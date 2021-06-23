@@ -5,8 +5,6 @@ feature 'View bookmarks' do
   end
 
   scenario 'visit bookmarks page to see list of bookmarks' do
-    connection = PG.connect(dbname: 'bookmark_manager_test')
-
     Bookmark.create(url: 'https://dev.to', title: 'Devto')
     Bookmark.create(url: 'https://hashnode.com', title: 'Hashnode')
     Bookmark.create(url: 'https://hackernoon.com', title: 'Hackernoon')
