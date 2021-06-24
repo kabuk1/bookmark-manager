@@ -32,4 +32,15 @@ describe Bookmark do
     end
   end
 
+  describe '.delete' do
+    scenario 'deltes the given bookmark' do
+      bookmark = Bookmark.create(url: 'https://medium.com', title: 'Medium')
+
+      Bookmark.delete(id: bookmark.id)
+
+      expect(Bookmark.all.length).to eq 0
+    end
+    
+  end
+
 end
